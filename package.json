@@ -1,6 +1,6 @@
 {
 	"name": "templify",
-	"version": "0.9",
+	"version": "0.9.0",
 	"description": "A simple template system originally based on zparse",
 	"url": "http://github.com/dmachi/templify",
 	"keywords": ["template","persevere"],
@@ -11,11 +11,23 @@
 	"location": "http://github.com/dmachi/templify/zipball/master", 
 	"license":"AFL/BSD",	"engines": {"node":">=0.1.30", "rhino": true},
 	"engines": {"node":">=0.1.30", "rhino": true},
-	"dependencies": ["narwhal", "commonjs-utils"],
-	"mappings": {
-		"promised-io": "jar:http://github.com/kriszyp/promised-io/zipball/master!/lib/",
-		"commonjs-utils": "jar:http://github.com/kriszyp/commonjs-utils/zipball/master!/lib/"
+	"dependencies": {
+		"perstore": ">=0.3.0"
 	},
+	"mappings": {
+		"promised-io": "jar:http://github.com/kriszyp/promised-io/zipball/master!/",
+		"perstore": "jar:http://github.com/kriszyp/perstore/zipball/master!/lib/"
+	},
+    "maintainers": [
+  	{
+  		"name": "Dustin Machi",
+  		"email": "dmachi@dojotoolkit.org"
+  	},
+  	{
+  		"name": "Kris Zyp",
+  		"email": "kriszyp@gmail.com"
+  	}
+    ],
 	"overlay": {
 		"narwhal": {
 			"mappings": {
